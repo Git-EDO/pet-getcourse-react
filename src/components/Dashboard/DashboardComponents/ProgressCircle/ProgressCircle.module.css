@@ -1,0 +1,126 @@
+.progressCircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #232325;
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 180px;
+  grid-area: progress-circle;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.5s ease;
+}
+.progressCircle.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.progressCircleTitle {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+.progressCirclePie {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  aspect-ratio: 1;
+
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+
+  color: #ffffff;
+}
+.progressCirclePie:before {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  background: conic-gradient(
+    #212c63 0,
+    #2e4ff6 calc(var(--percentage) * 1%),
+    #232325 0
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - 40px),
+    #000 calc(100% - 40px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - 40px),
+    #000 calc(100% - 40px)
+  );
+  animation: p 1s 1.2s both;
+}
+@property --percentage {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+@keyframes p {
+  from {
+    --percentage: 0;
+  }
+}
+.progressCirclePieDouble {
+  margin-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  aspect-ratio: 1;
+  filter: blur(7.5px);
+}
+.progressCircleWrapper {
+  position: relative;
+}
+.progressCircleFooter {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progressCircleFooterDone {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.progressCircleFooterTasks {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  background-color: #2e4df1;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-left: 10px;
+}

@@ -1,0 +1,51 @@
+.activeLesson {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #232325;
+  border-radius: 20px;
+  min-height: 180px;
+  grid-area: active-lesson;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.5s ease-out;
+}
+.lessonTitle {
+  margin-top: 8px;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.activeLesson.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+.lessonButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+.lessonHeader {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.lessonHeader span {
+  display: inline-flex;
+  padding: 6px 10px;
+  background-color: #303031;
+  border-radius: 4px;
+}
+.lessonBody {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 120%;
+  color: #2e4ff6;
+}

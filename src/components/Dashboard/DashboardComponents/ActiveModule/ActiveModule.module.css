@@ -1,0 +1,45 @@
+.activeModule {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #232325;
+  border-radius: 20px;
+  min-height: 180px;
+  grid-area: active-module;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.5s ease-out;
+}
+.moduleTitle {
+  margin-top: 8px;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.activeModule.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+.moduleButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+.moduleHeader {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.moduleHeader span {
+  display: inline-flex;
+  padding: 6px 10px;
+  background-color: #303031;
+  border-radius: 4px;
+}

@@ -1,0 +1,75 @@
+.toastMessages {
+  display: flex;
+  flex-direction: column;
+}
+.toastMessage {
+  position: fixed;
+  bottom: 32px;
+  right: 8px;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #232325;
+  border-radius: 20px;
+  box-shadow: 0 0 16px rgba(46, 79, 246, 0.4);
+  opacity: 0;
+  visibility: hidden;
+}
+.toastMessage.appear {
+  animation: appearance 4s ease;
+}
+@keyframes appearance {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+.toastMsgIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2e4ff6;
+}
+.toastMsgText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.toastMsgCongratulations {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.toastMsg {
+  margin-top: 6px;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.toastMsg span {
+  font-weight: 700;
+  color: #2e4ff6;
+}

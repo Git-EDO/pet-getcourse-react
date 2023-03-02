@@ -1,0 +1,30 @@
+.openButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2e4ff6;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+.openButton:disabled {
+  background-color: #303031;
+  cursor: not-allowed;
+}
+.openButton:disabled:hover {
+  box-shadow: none;
+}
+.openButton:hover {
+  box-shadow: 0 0 8px rgba(46, 79, 246, 0.5);
+}

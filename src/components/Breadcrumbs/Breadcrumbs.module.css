@@ -1,0 +1,40 @@
+.breadcrumbs {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbsLink {
+  position: relative;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 16px;
+  opacity: 0.4;
+}
+.breadcrumbsLink::after {
+  position: absolute;
+  content: '>';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.breadcrumbsLink:hover {
+  opacity: 1;
+}
+.breadcrumbs > div {
+  margin-left: 8px;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+}

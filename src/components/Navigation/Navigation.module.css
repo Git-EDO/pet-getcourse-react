@@ -1,0 +1,16 @@
+.navRow {
+  margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+}
+.navItem {
+  line-height: 110%;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+.navItem.active {
+  background-color: #515151;
+}

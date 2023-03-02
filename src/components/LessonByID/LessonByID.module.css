@@ -1,0 +1,72 @@
+.lessonByIDGrid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+.lessonVideoMaterials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #232325;
+  border-radius: 20px;
+  min-height: 300px;
+}
+.lessonVideoContent {
+  width: 100%;
+  height: 100%;
+  background-color: #303031;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lessonContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #232325;
+  border-radius: 20px;
+  padding: 20px;
+}
+.lessonModule {
+  display: flex;
+  align-items: center;
+}
+.lessonModule span {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  background: #303031;
+  border-radius: 4px;
+  padding: 6px 16px;
+}
+.lessonTitle {
+  margin-top: 8px;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.lessonBody {
+  margin-top: 8px;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  color: #2e4ff6;
+}
+.lessonButtons {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
