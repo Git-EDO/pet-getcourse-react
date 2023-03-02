@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/pet-getcourse-react/static/css/main.4885979b.css",
+    "main.js": "/pet-getcourse-react/static/js/main.057f2322.js",
+    "static/media/sf-ui-display-semibold.otf": "/pet-getcourse-react/static/media/sf-ui-display-semibold.994501842b1005adb6f9.otf",
+    "static/media/sf-ui-display-medium.otf": "/pet-getcourse-react/static/media/sf-ui-display-medium.32f938759a1b1b8ce03b.otf",
+    "static/media/sf-ui-display-light.otf": "/pet-getcourse-react/static/media/sf-ui-display-light.b4ca712946a31ed82045.otf",
+    "static/media/totheyard-logo.svg": "/pet-getcourse-react/static/media/totheyard-logo.8e138647f76e626f093f195fb7068c6e.svg",
+    "index.html": "/pet-getcourse-react/index.html",
+    "main.4885979b.css.map": "/pet-getcourse-react/static/css/main.4885979b.css.map",
+    "main.057f2322.js.map": "/pet-getcourse-react/static/js/main.057f2322.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4885979b.css",
+    "static/js/main.057f2322.js"
+  ]
+}
